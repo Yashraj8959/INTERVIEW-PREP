@@ -30,5 +30,14 @@ var -> can be redeclare multiple times, reinitilization can be done.
 let -> cannot be redeclare multiple times, reinitilization can be done.
 const -> cannot be declare without initialize with any value.
 
- 
+Hoisting---------------------->
+It is a concept where JS engine moves the variables and function declaration to the top with undefined value.
+console.log(count);   // undefined
+let count = 1; 
+how JS views the code->
+let count;
+console.log(count);
+count = 1;
+
+
 */
