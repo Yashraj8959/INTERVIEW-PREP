@@ -33,11 +33,21 @@ const -> cannot be declare without initialize with any value.
 Hoisting---------------------->
 It is a concept where JS engine moves the variables and function declaration to the top with undefined value.
 console.log(count);   // undefined
-let count = 1; 
+var count = 1; 
 how JS views the code->
-let count;
+var count;
 console.log(count);
 count = 1;
+
+In case of let, the variable is still declared but gives an error of using variable without initilization
+it basically lies in temporal dead zone
+function abc(){
+    console.log(a,b,c);
+    const c= 3;
+    let b = 4;
+    var a = 1;
+}
+abc();
 
 
 */
