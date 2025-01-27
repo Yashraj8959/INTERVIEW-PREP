@@ -25,5 +25,10 @@ function test(){
 true();
 
 
+Declaration---------------->
+var -> can be redeclare multiple times, reinitilization can be done.
+let -> cannot be redeclare multiple times, reinitilization can be done.
+const -> cannot be declare without initialize with any value.
 
+ 
 */
