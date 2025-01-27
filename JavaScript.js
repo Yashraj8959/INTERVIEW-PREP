@@ -13,7 +13,16 @@ var (ES5) is global scoped, if we define var in a block in can be accessable in 
 and let(ES6) and const are block scoped, they recognized where they wil be defined.
 
 
-
+overshadowing in javascript----------------------->
+function test(){
+    let a = "hello";
+    if(true){
+        let a = "hi";
+        console.log(a);
+    }
+    console.log(a);
+}
+true();
 
 
 
